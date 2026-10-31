@@ -1,0 +1,23 @@
+﻿namespace OrderProcessing.Shared.Exceptions;
+
+public sealed class DataFileCorruptedException : Exception
+{
+    public string FileName { get; }
+
+    public DataFileCorruptedException(string fileName, Exception? inner = null)
+        : base($"Data file '{fileName}' is corrupted or contains invalid JSON.", inner)
+    {
+        FileName = fileName;
+  
+
+
+
+
+
+
+
+
+  }
+
+}
+
